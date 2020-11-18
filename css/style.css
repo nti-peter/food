@@ -1,1 +1,68 @@
 /* Denna fil skall innehålla din CSS kod */
+* {margin: 0px;}
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 150vh;
+
+
+    grid-template-areas: 
+    
+    "he he he he he he"
+    "as1 a1 a1 a2 a2 as2"
+    "as1 a1 a1 a2 a2 as2"
+    "as1 a1 a1 a2 a2 as2"
+    "as1 a1 a1 a2 a2 as2"
+    "as1 a3 a3 a4 a4 as2"
+    "as1 a3 a3 a4 a4 as2"
+    "as1 a3 a3 a4 a4 as2"
+    "as1 a3 a3 a4 a4 as2"
+    "fo fo fo fo fo fo"
+    
+    ;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+}
+
+#header {
+    grid-area: he;
+background: lightgreen;
+}
+
+#article1 {
+    grid-area: a1;
+    background: whitesmoke;
+}
+
+#article2 {
+    grid-area: a2;
+    background: whitesmoke;
+}
+
+#article3 {
+    grid-area: a3;
+    background: whitesmoke;
+}
+
+#article4 {
+    grid-area: a4;
+    background: whitesmoke;
+}
+
+#aside1 {
+    grid-area: as1;
+    background: white;
+}
+
+#aside2 {
+    grid-area: as2;
+    background: white;
+}
+
+#footer {
+    grid-area: fo;
+    background: lightgreen
+}
