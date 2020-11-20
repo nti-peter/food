@@ -25,7 +25,10 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr);
 
+
 }
+
+
 
 #header {
     grid-area: he;
@@ -54,12 +57,12 @@ background: lightgreen;
 
 #aside1 {
     grid-area: as1;
-    background: white;
+    
 }
 
 #aside2 {
     grid-area: as2;
-    background: white;
+    
 }
 
 #footer {
