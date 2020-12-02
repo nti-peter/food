@@ -1,29 +1,38 @@
 /* Denna fil skall innehålla din CSS kod */
+
 * {margin: 0px;}
+
+* {font-size: 100px;}
 
 #container {
     display: grid;
     width: 100vw;
-    height: 150vh;
+    height: 200vh;
 
 
     grid-template-areas: 
     
-    "he he he he he he"
-    "as1 a1 a1 a2 a2 as2"
-    "as1 a1 a1 a2 a2 as2"
-    "as1 a1 a1 a2 a2 as2"
-    "as1 a1 a1 a2 a2 as2"
+    "as1 he he he he as2"
+    "as1 a1 a1 a1 a1 as2"
+    "as1 a1 a1 a1 a1 as2"
+    "as1 a2 a2 a2 a2 as2"
+    "as1 a2 a2 a2 a2 as2"
     "as1 a3 a3 a4 a4 as2"
     "as1 a3 a3 a4 a4 as2"
     "as1 a3 a3 a4 a4 as2"
     "as1 a3 a3 a4 a4 as2"
-    "fo fo fo fo fo fo"
+    "as1 a5 a5 a5 a5 as2"
+    "as1 a5 a5 a5 a5 as2"
+    "as1 a6 a6 a6 a6 as2"
+    "as1 a6 a6 a6 a6 as2"
+    "as1 a7 a7 a7 a7 as2"
+    "as1 a7 a7 a7 a7 as2"
+    "as1 fo fo fo fo as2"
     
     ;
 
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(16, 1fr);
 
 
 }
@@ -52,6 +61,21 @@ background: lightgreen;
 
 #article4 {
     grid-area: a4;
+    background: whitesmoke;
+}
+
+#article5 {
+    grid-area: a5;
+    background: whitesmoke;
+}
+
+#article6 {
+    grid-area: a6;
+    background: whitesmoke;
+}
+
+#article7 {
+    grid-area: a7;
     background: whitesmoke;
 }
 
