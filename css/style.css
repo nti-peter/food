@@ -2,201 +2,102 @@
 
 * {margin: 0px;}
 
-
+* {font-size: 100px;}
 
 #container {
     display: grid;
     width: 100vw;
     height: 200vh;
-    
-    
+
 
     grid-template-areas: 
     
-    "he he"
-    "ta ta"
-    "tag tag"
-    "fo fo"
+    "as1 he he he he as2"
+    "as1 a1 a1 a1 a1 as2"
+    "as1 a1 a1 a1 a1 as2"
+    "as1 a2 a2 a2 a2 as2"
+    "as1 a2 a2 a2 a2 as2"
+    "as1 a3 a3 a4 a4 as2"
+    "as1 a3 a3 a4 a4 as2"
+    "as1 a3 a3 a4 a4 as2"
+    "as1 a3 a3 a4 a4 as2"
+    "as1 a5 a5 a5 a5 as2"
+    "as1 a5 a5 a5 a5 as2"
+    "as1 a6 a6 a6 a6 as2"
+    "as1 a6 a6 a6 a6 as2"
+    "as1 a7 a7 a7 a7 as2"
+    "as1 a7 a7 a7 a7 as2"
+    "as1 fo fo fo fo as2"
     
     ;
 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+
 
 
 
 }
 
 #parallax {
-background: url('../img/brygga3.png') no-repeat center;
+background: url('../img/brygga2.png') no-repeat center;
 background-attachment: fixed;
 background-size: cover;
-width: 100vw;
 height: 200vh;
-
-
-}
-
-h1 {
-    text-shadow: 20px 20px black;
-}
-
-h2 {
-    text-shadow: 20px 20px black;
-}
-
-
-
-#headergrid {
-    grid-area: he;
-    display: flex;
-    width: 100vw;
-    height: 25vh;
-
-    padding: 50px;
+width: 100vw;
     
-    justify-content: center;
-
-    grid-template-areas: 
-    
-    "lo he2"
-    
-    ;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-
-    background-image: url(../img/darkoakplank.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    opacity: 50%;
-
-    
-
 }
 
-#logga {
-    display: flex;
-    grid-area: lo;
-    justify-content: center;
-    padding-top: 50px;
-
-
-}
 
 #header {
-    grid-area: he2;
-    font-style: italic;
-    color: whitesmoke;
-    -webkit-text-stroke-width: 10px;
-    -webkit-text-stroke-color: whitesmoke;
-    
-    font-size: 200px;
-
+    grid-area: he;
+    background: lightgreen;
 }
-
-
-
-#articlegrid {
-    display: flex;
-    grid-area: ag;
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-
-    justify-content: center;
-    
-
-
-    grid-template-areas: 
-    
-    "a1 a2"
-    "a3 a4"
-   
-    
-    ;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    background-image: url(../img/greystonewall.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-
-    grid-gap: 100px;
-    padding: 100px;
-
-}
-
 
 #article1 {
     grid-area: a1;
-    background: lightslategray;
-    box-shadow: 20px 20px black; opacity: 75%;
-    
+    background: whitesmoke;
 }
 
 #article2 {
     grid-area: a2;
-    background: lightslategray;
-    box-shadow: 20px 20px black; opacity: 75%;
-    
+    background: whitesmoke;
 }
 
 #article3 {
     grid-area: a3;
-    background: lightslategray;
-    box-shadow: 20px 20px black; opacity: 75%;
-    
+    background: whitesmoke;
 }
 
 #article4 {
     grid-area: a4;
-    background: lightslategray;
-    box-shadow: 20px 20px black; opacity: 75%;
+    background: whitesmoke;
+}
+
+#article5 {
+    grid-area: a5;
+    background: whitesmoke;
+}
+
+#article6 {
+    grid-area: a6;
+    background: whitesmoke;
+}
+
+#article7 {
+    grid-area: a7;
+    background: whitesmoke;
+}
+
+#aside1 {
+    grid-area: as1;
     
 }
 
-
-
-
-#transparentarticlegrid {
-    grid-area: tag;
-    display: grid;
-    width: 100vw;
-    height: 75vh;
-
-    padding: ;
-
-    grid-template-areas: 
+#aside2 {
+    grid-area: as2;
     
-    "ta ta"
-    "ta ta"
-    "ta ta"
-    "ta ta"
-    "ta ta"
-    "ta ta"
-    "ta ta"
-    "ta ta"
-    
-    ;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-
-    
-    
-
 }
-
-#transparentarticle {
-    grid-area: ta;
-
-}
-
-
 
 #footer {
     grid-area: fo;
