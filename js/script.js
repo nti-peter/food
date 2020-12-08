@@ -1,1 +1,4 @@
-// Denna fil skall innehålla JavaScript (JS)
+var button = document.getElementById("text");
+button.onclick = function(){
+  //do stuff
+}
