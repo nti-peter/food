@@ -2,104 +2,234 @@
 
 * {margin: 0px;}
 
-* {font-size: 100px;}
+
 
 #container {
     display: grid;
     width: 100vw;
-    height: 200vh;
-
+    height: 100vh;
+    
+    
 
     grid-template-areas: 
     
-    "as1 he he he he as2"
-    "as1 a1 a1 a1 a1 as2"
-    "as1 a1 a1 a1 a1 as2"
-    "as1 a2 a2 a2 a2 as2"
-    "as1 a2 a2 a2 a2 as2"
-    "as1 a3 a3 a4 a4 as2"
-    "as1 a3 a3 a4 a4 as2"
-    "as1 a3 a3 a4 a4 as2"
-    "as1 a3 a3 a4 a4 as2"
-    "as1 a5 a5 a5 a5 as2"
-    "as1 a5 a5 a5 a5 as2"
-    "as1 a6 a6 a6 a6 as2"
-    "as1 a6 a6 a6 a6 as2"
-    "as1 a7 a7 a7 a7 as2"
-    "as1 a7 a7 a7 a7 as2"
-    "as1 fo fo fo fo as2"
+    "he he"
+    "tag tag"
+    
     
     ;
 
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
 
 
 
 }
 
 #parallax {
-background: url('../img/brygga2.png') no-repeat center;
+background: url('../img/nice-sunset-at-thedocks-blurred.png') no-repeat;
 background-attachment: fixed;
 background-size: cover;
-height: 200vh;
 width: 100vw;
+height: 194.5vh;
+
+
+}
+
+h1 {
+    text-shadow: 30px 30px black;
+}
+
+h2 {
+    text-shadow: 30px 30px black;
+}
+
+
+
+#headergrid {
+    grid-area: he;
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+
+    justify-content: center;
+
+
+    grid-template-areas: 
+    
+    "lo he2"
+    
+    ;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    background-image: url(../img/brownbrickwall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  
+
+    
+
+}
+
+#logga {
+    display: flex;
+    grid-area: lo;
+    justify-content: center;
+    padding: 100px;
+
+
+}
+
+#header {
+    grid-area: he2;
+    font-style: italic;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: whitesmoke;
+    
+    padding-top: 200px;
+    padding-right: 500px;
+
+    font-size: 300px;
+
+}
+
+#transparentarticlegrid {
+    grid-area: tag;
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+
+    grid-template-areas: 
+    
+    "ta ta ta"
+    "ta ad ta"
+    "ta ta ta"
+   
+    
+    ;
+
+    justify-content: center;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+
+    
+
+}
+
+#transparentarticle {
+    grid-area: ta;
     
 }
 
+#arrowdown {
+    display: grid;
+    grid-area: ad;
 
-#header {
-    grid-area: he;
-    background: lightgreen;
+    padding-top: 1000px;
+    width: 800px;
+    
+
 }
+
+#menulink {
+    
+  
+
+}
+
+
+#menucontainer {
+    display: grid;
+    width: 100vw;
+    height: 94.5vh;
+    
+    
+
+    grid-template-areas: 
+    
+    "ag ag"
+    "fo fo"
+
+    ;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+#articlegrid {
+    display: flex;
+    grid-area: ag;
+    display: grid;
+    width: 100vw;
+    height: 94.5vh;
+
+    justify-content: center;
+    
+
+
+    grid-template-areas: 
+    
+    "a1 a2"
+    "a3 a4"
+   
+    
+    ;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    background-image: url(../img/brownbrickwallbottom.png);
+    background-repeat: 50;
+    background-size: cover; 
+
+    grid-gap: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
 
 #article1 {
     grid-area: a1;
-    background: whitesmoke;
+    background: lightslategray;
+    box-shadow: 20px 20px black; opacity: 75%;
+    
 }
 
 #article2 {
     grid-area: a2;
-    background: whitesmoke;
+    background: lightslategray;
+    box-shadow: 20px 20px black; opacity: 75%;
+    
 }
 
 #article3 {
     grid-area: a3;
-    background: whitesmoke;
+    background: lightslategray;
+    box-shadow: 20px 20px black; opacity: 75%;
+    
 }
 
 #article4 {
     grid-area: a4;
-    background: whitesmoke;
-}
-
-#article5 {
-    grid-area: a5;
-    background: whitesmoke;
-}
-
-#article6 {
-    grid-area: a6;
-    background: whitesmoke;
-}
-
-#article7 {
-    grid-area: a7;
-    background: whitesmoke;
-}
-
-#aside1 {
-    grid-area: as1;
+    background: lightslategray;
+    box-shadow: 20px 20px black; opacity: 75%;
     
 }
 
-#aside2 {
-    grid-area: as2;
-    
-}
+
+
+
 
 #footer {
     grid-area: fo;
-    background: lightgreen
+    background: black
 }
