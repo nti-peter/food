@@ -9,8 +9,6 @@
     width: 100vw;
     height: 100vh;
     
-    
-
     grid-template-areas: 
     
     "he he"
@@ -21,10 +19,7 @@
 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    
-
-
-
+ 
 }
 
 #parallax {
@@ -65,10 +60,8 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
 
-    background-image: url(../img/brownbrickwall.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    background-color: black;
+    opacity: 50%;
   
 
     
@@ -95,6 +88,8 @@ h2 {
     padding-right: 500px;
 
     font-size: 300px;
+
+    
 
 }
 
@@ -134,12 +129,13 @@ h2 {
 
     padding-top: 1000px;
     width: 800px;
+
+    opacity: 90%;
     
 
 }
 
-#menulink {
-    
+
   
 
 }
