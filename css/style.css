@@ -2,7 +2,11 @@
 
 * {margin: 0px;}
 
+<<<<<<< Updated upstream
 
+=======
+* {font-size: auto;}
+>>>>>>> Stashed changes
 
 #container {
     display: grid;
