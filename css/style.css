@@ -32,11 +32,12 @@ height: 194.5vh;
 }
 
 h1 {
-    text-shadow: 30px 30px black;
+    text-shadow: 15px 15px black;
+    
 }
 
 h2 {
-    text-shadow: 30px 30px black;
+    text-shadow: 15px 15px black;
 }
 
 
@@ -59,9 +60,10 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
 
-    background-color: black;
-    opacity: 50%;
+    background-color: rgba(0, 0, 0, 0.452);
+    opacity: 100%;
   
+    
 
     
 
@@ -71,7 +73,10 @@ h2 {
     display: flex;
     grid-area: lo;
     justify-content: center;
-    padding: 2vh;
+    padding: 3vh;
+    width: 40vh;
+
+    
 
 
 }
@@ -81,7 +86,7 @@ h2 {
     font-style: italic;
     color: whitesmoke;
     -webkit-text-stroke-width: 10px;
-    -webkit-text-stroke-color: whitesmoke;
+   
     
     padding-top: 3vh;
     padding-right: 5vh;
@@ -187,6 +192,7 @@ h2 {
     padding-top: 100px;
     padding-bottom: 100px;
 
+    opacity: 90%;
 }
 
 
