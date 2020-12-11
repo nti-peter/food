@@ -1,7 +1,6 @@
 /* Denna fil skall innehålla din CSS kod */
 
-* {margin: 0px;}
-
+* {margin: 0vh;}
 
 
 #container {
@@ -72,7 +71,7 @@ h2 {
     display: flex;
     grid-area: lo;
     justify-content: center;
-    padding: 100px;
+    padding: 2vh;
 
 
 }
@@ -84,10 +83,10 @@ h2 {
     -webkit-text-stroke-width: 10px;
     -webkit-text-stroke-color: whitesmoke;
     
-    padding-top: 200px;
-    padding-right: 500px;
+    padding-top: 3vh;
+    padding-right: 5vh;
 
-    font-size: 300px;
+    font-size: 10vh;
 
     
 
@@ -127,8 +126,8 @@ h2 {
     display: grid;
     grid-area: ad;
 
-    padding-top: 1000px;
-    width: 800px;
+    padding-top: 30vh;
+    width: 20vh;
 
     opacity: 90%;
     
@@ -137,8 +136,6 @@ h2 {
 
 
   
-
-}
 
 
 #menucontainer {
