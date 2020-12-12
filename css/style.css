@@ -2,6 +2,9 @@
 
 * {margin: 0vh;}
 
+html {
+    scroll-behavior: smooth;
+}
 
 #container {
     display: grid;
@@ -12,6 +15,7 @@
     
     "he he"
     "tag tag"
+    
     
     
     ;
@@ -26,18 +30,18 @@ background: url('../img/nice-sunset-at-thedocks-blurred.png') no-repeat;
 background-attachment: fixed;
 background-size: cover;
 width: 100vw;
-height: 194.5vh;
+height: 220vh;
 
 
 }
 
 h1 {
-    text-shadow: 15px 15px black;
+    text-shadow: 1vh 1vh black;
     
 }
 
 h2 {
-    text-shadow: 15px 15px black;
+    text-shadow: 1vh 1vh black;
 }
 
 
@@ -85,7 +89,7 @@ h2 {
     grid-area: he2;
     font-style: italic;
     color: whitesmoke;
-    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-width: 1vh;
    
     
     padding-top: 3vh;
@@ -146,19 +150,19 @@ h2 {
 #menucontainer {
     display: grid;
     width: 100vw;
-    height: 94.5vh;
+    height: 100vh;
     
     
 
     grid-template-areas: 
     
     "ag ag"
-    "fo fo"
+    
 
     ;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 
@@ -167,7 +171,7 @@ h2 {
     grid-area: ag;
     display: grid;
     width: 100vw;
-    height: 94.5vh;
+    height: 100vh;
 
     justify-content: center;
     
@@ -177,6 +181,7 @@ h2 {
     
     "a1 a2"
     "a3 a4"
+
    
     
     ;
@@ -188,10 +193,9 @@ h2 {
     background-repeat: 50;
     background-size: cover; 
 
-    grid-gap: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+    grid-gap: 10vh;
+    
+    
     opacity: 90%;
 }
 
@@ -199,36 +203,57 @@ h2 {
 #article1 {
     grid-area: a1;
     background: lightslategray;
-    box-shadow: 20px 20px black; opacity: 75%;
+    box-shadow: 2vh 2vh black; opacity: 75%;
     
 }
 
 #article2 {
     grid-area: a2;
     background: lightslategray;
-    box-shadow: 20px 20px black; opacity: 75%;
+    box-shadow: 2vh 2vh black; opacity: 75%;
     
 }
 
 #article3 {
     grid-area: a3;
     background: lightslategray;
-    box-shadow: 20px 20px black; opacity: 75%;
+    box-shadow: 2vh 2vh black; opacity: 75%;
     
 }
 
 #article4 {
     grid-area: a4;
     background: lightslategray;
-    box-shadow: 20px 20px black; opacity: 75%;
+    box-shadow: 2vh 2vh black; opacity: 75%;
     
 }
 
+#footergrid {
+    display: grid;
+    grid-area: fg;
+    width: 100vw;
+    height: 20vh;
+
+   
+    
 
 
+    grid-template-areas: 
+    
+    "fo fo"
+   
+    
+    ;
 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    
+    opacity: 80%;
+}
 
 #footer {
     grid-area: fo;
     background: black
 }
+
