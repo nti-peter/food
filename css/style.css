@@ -14,6 +14,7 @@ html {
     grid-template-areas: 
     
     "he he"
+    "eg eg"
     "tag tag"
     
     
@@ -21,7 +22,7 @@ html {
     ;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
  
 }
 
@@ -78,7 +79,7 @@ h2 {
     grid-area: lo;
     justify-content: center;
     padding: 3vh;
-    width: 40vh;
+    width: 20vh; 
 
     
 
@@ -101,15 +102,63 @@ h2 {
 
 }
 
+
+#extrasgrid {
+    display: flex;
+    grid-area: eg;
+    width: 100vw;
+    height: 10vh;
+    
+    justify-content: center;
+
+    grid-template-areas: 
+    
+    "co ab lc"
+    
+
+    ;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    grid-gap: 3vh;
+
+    opacity: 70%;
+}
+
+#contact {
+    display: flex;
+    grid-area: co;
+
+    width: 30vh;
+}
+
+#aboutus {
+    display: flex;
+    grid-area: ab;
+
+    width: 30vh;
+}
+
+#location {
+    display: flex;
+    grid-area: lc;
+
+    width: 30vh;
+}
+
+
+
 #transparentarticlegrid {
     grid-area: tag;
     display: flex;
     width: 100vw;
-    height: 75vh;
+    height: 65vh;
 
     grid-template-areas: 
-    
-    "ta ta ta"
+
     "ta ad ta"
     "ta ta ta"
    
@@ -119,26 +168,33 @@ h2 {
     justify-content: center;
 
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
 
     
 
 }
+
+
 
 #transparentarticle {
     grid-area: ta;
     
 }
 
-#arrowdown {
-    display: grid;
+#whitearrowdown {
+    display: flex;
     grid-area: ad;
 
+    justify-content: center;
+
     padding-top: 30vh;
+    
     width: 20vh;
 
     opacity: 90%;
+
+    
     
 
 }
