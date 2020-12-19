@@ -74,24 +74,15 @@ h2 {
 
 }
 
-#logga {
-    display: flex;
-    grid-area: lo;
-    justify-content: center;
-    padding: 3vh;
-    width: 20vh; 
 
-    
-
-
-}
 
 #backlogga {
     display: flex;
     grid-area: lo;
     justify-content: center;
     padding: 3vh;
-    width: 25vh; 
+    padding-right: 10vh;
+    width: 28.5vh; 
 
     
 
@@ -113,6 +104,8 @@ h2 {
     
 
 }
+
+
 
 
 #extrasgrid {
@@ -166,28 +159,67 @@ h2 {
 #transparentarticlegrid {
     grid-area: tag;
     display: flex;
-    width: 100vw;
-    height: 65vh;
+    width: 73vw;
+    height: 150vh;
+    
+    padding-left: 27vh;
+    padding-top: 5vh;
+    
 
     grid-template-areas: 
 
-    "ta ad ta"
-    "ta ta ta"
+    "ta ta ta ta"
+    "ta aug aug ta"
+    "ta ta ta ta"
    
     
     ;
 
     justify-content: center;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
+    opacity: 90%;
 
-    
 
 }
 
+#aboutusgrid {
+    display: flex;
+    grid-area: aug;
+    display: grid;
+    width: 100vw;
+    height: 150vh;
 
+    
+    
+
+    justify-content: center;
+    
+
+
+    grid-template-areas: 
+    
+    "ta a5 a5 ta"
+    "ta a5 a5 ta"
+
+   
+    
+    ;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    background-image: url(../img/blackbox.png);
+    background-repeat: no-repeat;
+    background-size: fixed; 
+
+    
+    
+
+
+}
 
 #transparentarticle {
     grid-area: ta;
@@ -293,6 +325,13 @@ h2 {
     grid-area: a4;
     background: lightslategray;
     box-shadow: 2vh 2vh black; opacity: 75%;
+    
+}
+
+#article5 {
+    grid-area: a5;
+    
+    
     
 }
 
