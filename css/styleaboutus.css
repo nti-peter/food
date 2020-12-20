@@ -211,7 +211,7 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
-    background-image: url(../img/blackbox.png);
+    background-image: url(../img/aboutusblackbox.png);
     background-repeat: no-repeat;
     background-size: fixed; 
 

@@ -45,6 +45,11 @@ h2 {
     text-shadow: 1vh 1vh black;
 }
 
+p {
+    padding-left: ;
+    
+}
+
 
 
 #headergrid {
@@ -211,7 +216,7 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
-    background-image: url(../img/blackbox.png);
+    background-image: url(../img/locationblackbox.png);
     background-repeat: no-repeat;
     background-size: fixed; 
 
