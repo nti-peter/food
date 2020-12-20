@@ -31,7 +31,7 @@ background: url('../img/nice-sunset-at-thedocks-blurred.png') no-repeat;
 background-attachment: fixed;
 background-size: cover;
 width: 100vw;
-height: 200vh;
+height: 220vh;
 
 
 }
@@ -74,24 +74,15 @@ h2 {
 
 }
 
-#logga {
-    display: flex;
-    grid-area: lo;
-    justify-content: center;
-    padding: 3vh;
-    width: 20vh; 
 
-    
-
-
-}
 
 #backlogga {
     display: flex;
     grid-area: lo;
     justify-content: center;
     padding: 3vh;
-    width: 25vh; 
+    padding-right: 10vh;
+    width: 28.5vh; 
 
     
 
@@ -113,6 +104,8 @@ h2 {
     
 
 }
+
+
 
 
 #extrasgrid {
@@ -166,28 +159,67 @@ h2 {
 #transparentarticlegrid {
     grid-area: tag;
     display: flex;
-    width: 100vw;
-    height: 65vh;
+    width: 73vw;
+    height: 150vh;
+    
+    padding-left: 27vh;
+    padding-top: 5vh;
+    
 
     grid-template-areas: 
 
-    "ta ad ta"
-    "ta ta ta"
+    "ta ta ta ta"
+    "ta kmg kmg ta"
+    "ta ta ta ta"
    
     
     ;
 
     justify-content: center;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
+    opacity: 90%;
 
-    
 
 }
 
+#köttmenugrid {
+    display: flex;
+    grid-area: kmg;
+    display: grid;
+    width: 100vw;
+    height: 190vh;
 
+    
+    
+
+    justify-content: center;
+    
+
+
+    grid-template-areas: 
+    
+    "ta a5 a5 ta"
+    "ta a5 a5 ta"
+
+   
+    
+    ;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    background-image: url(../img/köttmenublackbox.png);
+    background-repeat: no-repeat;
+    background-size: fixed; 
+
+    
+    
+
+
+}
 
 #transparentarticle {
     grid-area: ta;
@@ -239,7 +271,7 @@ h2 {
     grid-area: ag;
     display: grid;
     width: 100vw;
-    height: 105vh;
+    height: 100vh;
 
     justify-content: center;
     
@@ -261,43 +293,44 @@ h2 {
     background-repeat: 50;
     background-size: cover; 
 
-    grid-gap: 5vh;
+    grid-gap: 10vh;
     
     
-    opacity: 100%;
+    opacity: 90%;
 }
 
 
 #article1 {
     grid-area: a1;
-    background: rgba(0, 0, 0, 0.644);
-    
-    
-    
+    background: lightslategray;
+    box-shadow: 2vh 2vh black; opacity: 75%;
     
 }
 
 #article2 {
     grid-area: a2;
-    background: rgba(0, 0, 0, 0.644);
-    
-    background-size: cover;
+    background: lightslategray;
+    box-shadow: 2vh 2vh black; opacity: 75%;
     
 }
 
 #article3 {
     grid-area: a3;
-    background: rgba(0, 0, 0, 0.644);
-    
+    background: lightslategray;
+    box-shadow: 2vh 2vh black; opacity: 75%;
     
 }
 
 #article4 {
     grid-area: a4;
-    display: flex;
-    background: rgba(0, 0, 0, 0.644);
+    background: lightslategray;
+    box-shadow: 2vh 2vh black; opacity: 75%;
     
+}
 
+#article5 {
+    grid-area: a5;
+    
     
     
 }
@@ -306,7 +339,7 @@ h2 {
     display: grid;
     grid-area: fg;
     width: 100vw;
-    height: 0vh;
+    height: 20vh;
 
    
     
